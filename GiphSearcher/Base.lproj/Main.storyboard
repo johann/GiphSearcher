@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GifViewController" id="BYZ-38-t0r" customClass="GifViewController" customModule="GiphSearcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7dN-49-FX0" customClass="SearchBar" customModule="GiphSearcher" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0t4-54-f3j">
+                                <rect key="frame" x="0.0" y="100" width="375" height="712"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jna-8g-qug" customClass="MosaicViewLayout" customModule="GiphSearcher" customModuleProvider="target">
+                                    <size key="itemSize" width="171" height="152"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gifCell" id="Nll-Yl-RrK" customClass="GifCollectionViewCell" customModule="GiphSearcher" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="152"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="171" height="152"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tgs-zh-Z4C" customClass="AnimatedImageView" customModule="Kingfisher">
+                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="152"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Tgs-zh-Z4C" secondAttribute="trailing" id="8ae-sh-pwF"/>
+                                            <constraint firstItem="Tgs-zh-Z4C" firstAttribute="top" secondItem="Nll-Yl-RrK" secondAttribute="top" id="KRA-8D-Zb2"/>
+                                            <constraint firstItem="Tgs-zh-Z4C" firstAttribute="leading" secondItem="Nll-Yl-RrK" secondAttribute="leading" id="Sok-bS-eje"/>
+                                            <constraint firstAttribute="bottom" secondItem="Tgs-zh-Z4C" secondAttribute="bottom" id="kol-uS-6YS"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="gifImageView" destination="Tgs-zh-Z4C" id="y6B-9s-14d"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7dN-49-FX0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6NS-SL-2Jg"/>
+                            <constraint firstItem="7dN-49-FX0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UZe-xM-jpT"/>
+                            <constraint firstItem="0t4-54-f3j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bvE-3t-X9z"/>
+                            <constraint firstItem="0t4-54-f3j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cKu-UG-aYq"/>
+                            <constraint firstItem="0t4-54-f3j" firstAttribute="top" secondItem="7dN-49-FX0" secondAttribute="bottom" id="hAy-5b-pSx"/>
+                            <constraint firstItem="0t4-54-f3j" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="sBm-KW-wmN"/>
+                            <constraint firstItem="7dN-49-FX0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uf3-WL-p45"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Obd-c3-Bwq"/>
+                    <connections>
+                        <outlet property="collectionView" destination="0t4-54-f3j" id="G9P-md-M1b"/>
+                        <outlet property="searchBar" destination="7dN-49-FX0" id="xcT-wr-edy"/>
+                        <outlet property="searchDisplayController" destination="yub-jf-fRY" id="Ihi-DJ-8Ml"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="yub-jf-fRY">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="9Sd-nz-yRC"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="Rvn-vk-wXX"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="Mjz-ig-aUb"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="hhn-BV-xma"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="136.69950738916256"/>
+        </scene>
+        <!--Gif Detail View Controller-->
+        <scene sceneID="IeG-Km-qyD">
+            <objects>
+                <viewController storyboardIdentifier="GifDetailViewController" id="NvH-Pk-M4U" customClass="GifDetailViewController" customModule="GiphSearcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cMm-Hk-ixb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uIT-Cp-Bci" customClass="AnimatedImageView" customModule="Kingfisher">
+                                <rect key="frame" x="0.0" y="44" width="375" height="646"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="646" id="TS8-LA-o4t"/>
+                                    <constraint firstAttribute="width" constant="375" id="oHa-Qa-eqh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmE-WG-DoR">
+                                <rect key="frame" x="157" y="711" width="61" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="K55-fn-9a6"/>
+                                    <constraint firstAttribute="width" constant="61" id="O7M-ba-CZW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="sharePressed:" destination="NvH-Pk-M4U" eventType="touchUpInside" id="6dF-IF-b0v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dXH-AI-lgm" firstAttribute="bottom" secondItem="ZmE-WG-DoR" secondAttribute="bottom" constant="26" id="4Op-21-L0H"/>
+                            <constraint firstItem="ZmE-WG-DoR" firstAttribute="top" secondItem="uIT-Cp-Bci" secondAttribute="bottom" constant="21" id="8lu-gV-NM9"/>
+                            <constraint firstItem="uIT-Cp-Bci" firstAttribute="trailing" secondItem="dXH-AI-lgm" secondAttribute="trailing" id="IEZ-LN-rgx"/>
+                            <constraint firstItem="uIT-Cp-Bci" firstAttribute="top" secondItem="dXH-AI-lgm" secondAttribute="top" id="N1d-ut-3Cu"/>
+                            <constraint firstItem="ZmE-WG-DoR" firstAttribute="centerX" secondItem="cMm-Hk-ixb" secondAttribute="centerX" id="Rpw-o1-KcQ"/>
+                            <constraint firstItem="uIT-Cp-Bci" firstAttribute="leading" secondItem="dXH-AI-lgm" secondAttribute="leading" id="cYv-qx-Lew"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dXH-AI-lgm"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="uIT-Cp-Bci" id="xwU-Nn-Ubr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sY-Xx-ZGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.8000000000002" y="539.40886699507394"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="xSi-5w-tPW">
+            <objects>
+                <viewController storyboardIdentifier="StickerViewController" id="33B-uI-r00" customClass="StickerViewController" customModule="GiphSearcher" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="thD-zY-aBk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="q5k-Uf-PMk" customClass="SearchBar" customModule="GiphSearcher" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RRC-DD-vxZ">
+                                <rect key="frame" x="0.0" y="100" width="375" height="712"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JOO-g5-3An" customClass="MosaicViewLayout" customModule="GiphSearcher" customModuleProvider="target">
+                                    <size key="itemSize" width="171" height="152"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="stickerCell" id="RgX-11-RDZ" customClass="GifCollectionViewCell" customModule="GiphSearcher" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="152"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="171" height="152"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fdi-bK-AJf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="152"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="fdi-bK-AJf" firstAttribute="top" secondItem="RgX-11-RDZ" secondAttribute="top" id="ZTD-Yp-92p"/>
+                                            <constraint firstItem="fdi-bK-AJf" firstAttribute="leading" secondItem="RgX-11-RDZ" secondAttribute="leading" id="gHK-9O-MXw"/>
+                                            <constraint firstAttribute="bottom" secondItem="fdi-bK-AJf" secondAttribute="bottom" id="h5z-jJ-w0v"/>
+                                            <constraint firstAttribute="trailing" secondItem="fdi-bK-AJf" secondAttribute="trailing" id="yMX-ZO-FN6"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="gifImageView" destination="fdi-bK-AJf" id="OCF-um-Txx"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="q5k-Uf-PMk" firstAttribute="top" secondItem="6a1-BX-swc" secondAttribute="top" id="00d-9y-Z5b"/>
+                            <constraint firstItem="RRC-DD-vxZ" firstAttribute="trailing" secondItem="6a1-BX-swc" secondAttribute="trailing" id="1Ox-gI-Llw"/>
+                            <constraint firstItem="RRC-DD-vxZ" firstAttribute="bottom" secondItem="6a1-BX-swc" secondAttribute="bottom" constant="34" id="SHK-AC-RCN"/>
+                            <constraint firstItem="q5k-Uf-PMk" firstAttribute="leading" secondItem="6a1-BX-swc" secondAttribute="leading" id="Uji-ib-7ru"/>
+                            <constraint firstItem="RRC-DD-vxZ" firstAttribute="leading" secondItem="6a1-BX-swc" secondAttribute="leading" id="iRu-90-Zbp"/>
+                            <constraint firstItem="q5k-Uf-PMk" firstAttribute="trailing" secondItem="6a1-BX-swc" secondAttribute="trailing" id="jRo-zo-iJC"/>
+                            <constraint firstItem="RRC-DD-vxZ" firstAttribute="top" secondItem="q5k-Uf-PMk" secondAttribute="bottom" id="mFr-DZ-UqR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6a1-BX-swc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9sg-wO-b4V"/>
+                    <connections>
+                        <outlet property="collectionView" destination="RRC-DD-vxZ" id="CU8-EH-CUc"/>
+                        <outlet property="searchBar" destination="q5k-Uf-PMk" id="4e3-vt-pin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tir-I4-QJv" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="631-6a-EfK">
+                    <connections>
+                        <outlet property="delegate" destination="33B-uI-r00" id="cKS-kE-NSX"/>
+                        <outlet property="searchContentsController" destination="33B-uI-r00" id="PN2-E8-SsG"/>
+                        <outlet property="searchResultsDataSource" destination="33B-uI-r00" id="REI-5I-ltZ"/>
+                        <outlet property="searchResultsDelegate" destination="33B-uI-r00" id="QCM-lz-E8K"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1079" y="853"/>
+        </scene>
+    </scenes>
+</document>

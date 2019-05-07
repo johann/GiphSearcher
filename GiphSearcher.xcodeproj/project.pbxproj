@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B42DECF62F4A36796ACDE74 /* Pods_GiphSearcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E105D5DBE5329B122729E3B3 /* Pods_GiphSearcherUITests.framework */; };
+		2222D476674E937C9CD78128 /* Pods_GiphSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D7F87800BCD2BC518CEE0A /* Pods_GiphSearcher.framework */; };
+		554649239B4BBA7A09CF4FFB /* Pods_GiphSearcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE93AED9ED28D49176BF5EF /* Pods_GiphSearcherTests.framework */; };
+		C1B649152274927200D55C9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649142274927200D55C9A /* AppDelegate.swift */; };
+		C1B649172274927200D55C9A /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649162274927200D55C9A /* GifViewController.swift */; };
+		C1B6491A2274927200D55C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B649182274927200D55C9A /* Main.storyboard */; };
+		C1B6491C2274927400D55C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B6491B2274927400D55C9A /* Assets.xcassets */; };
+		C1B6491F2274927400D55C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B6491D2274927400D55C9A /* LaunchScreen.storyboard */; };
+		C1B649352274927400D55C9A /* GiphSearcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649342274927400D55C9A /* GiphSearcherUITests.swift */; };
+		C1B649432274946600D55C9A /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649422274946600D55C9A /* Gif.swift */; };
+		C1B64947227495F300D55C9A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B64946227495F300D55C9A /* Endpoint.swift */; };
+		C1B6494A2274962300D55C9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649492274962300D55C9A /* Constants.swift */; };
+		C1B6494C2274986D00D55C9A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6494B2274986D00D55C9A /* WebService.swift */; };
+		C1B6494E227498C600D55C9A /* GiphyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6494D227498C600D55C9A /* GiphyApi.swift */; };
+		C1B649522276015800D55C9A /* GifCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649512276015800D55C9A /* GifCollectionViewCell.swift */; };
+		C1B6495722761D7600D55C9A /* GiphyApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6495622761D7600D55C9A /* GiphyApiTests.swift */; };
+		C1B6495E2276289600D55C9A /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6495D2276289600D55C9A /* TestData.swift */; };
+		C1B64960227629B400D55C9A /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6495F227629B400D55C9A /* URLProtocolMock.swift */; };
+		C1B6496222762A6800D55C9A /* WebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6496122762A6800D55C9A /* WebServiceTests.swift */; };
+		C1B64965227699A600D55C9A /* MosaicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B64964227699A600D55C9A /* MosaicLayout.swift */; };
+		C1B649672276B25A00D55C9A /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1B649662276B25900D55C9A /* loader.gif */; };
+		C1B649692276BE6B00D55C9A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649682276BE6B00D55C9A /* NetworkError.swift */; };
+		C1B6496B2276BE9A00D55C9A /* WebProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6496A2276BE9A00D55C9A /* WebProtocol.swift */; };
+		C1B6496D2276C68400D55C9A /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6496C2276C68400D55C9A /* StickerViewController.swift */; };
+		C1B649712276C9F600D55C9A /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649702276C9F600D55C9A /* GifTests.swift */; };
+		C1B649762276CC6400D55C9A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649752276CC6400D55C9A /* Coordinator.swift */; };
+		C1B649792276CCBE00D55C9A /* GifCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649782276CCBE00D55C9A /* GifCoordinator.swift */; };
+		C1B6497B2276CD4200D55C9A /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6497A2276CD4200D55C9A /* Storyboardable.swift */; };
+		C1B6497D2276CE2500D55C9A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6497C2276CE2500D55C9A /* MainTabBarController.swift */; };
+		C1B6497F2276D06300D55C9A /* StickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6497E2276D06300D55C9A /* StickerCoordinator.swift */; };
+		C1B649822276D9FA00D55C9A /* GifDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B649812276D9FA00D55C9A /* GifDetailViewController.swift */; };
+		C1FFF97E227BE3F8009C0D1E /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF97D227BE3F8009C0D1E /* Throttler.swift */; };
+		C1FFF980227BE4B0009C0D1E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF97F227BE4B0009C0D1E /* SearchBar.swift */; };
+		C1FFF983227BE91B009C0D1E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF982227BE91B009C0D1E /* Date.swift */; };
+		C1FFF989227BFFFF009C0D1E /* ThrottlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF988227BFFFF009C0D1E /* ThrottlerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1B649262274927400D55C9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1B649092274927200D55C9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1B649102274927200D55C9A;
+			remoteInfo = GiphSearcher;
+		};
+		C1B649312274927400D55C9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1B649092274927200D55C9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1B649102274927200D55C9A;
+			remoteInfo = GiphSearcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53064D6FC12E9489AA914952 /* Pods-GiphSearcherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphSearcherUITests.release.xcconfig"; path = "Target Support Files/Pods-GiphSearcherUITests/Pods-GiphSearcherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86D14E26E2C80AF9D0BDC036 /* Pods-GiphSearcherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphSearcherUITests.debug.xcconfig"; path = "Target Support Files/Pods-GiphSearcherUITests/Pods-GiphSearcherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C466E052157FA5799ECC082 /* Pods-GiphSearcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphSearcherTests.release.xcconfig"; path = "Target Support Files/Pods-GiphSearcherTests/Pods-GiphSearcherTests.release.xcconfig"; sourceTree = "<group>"; };
+		8FCD997CB8E50522E114937B /* Pods-GiphSearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphSearcher.release.xcconfig"; path = "Target Support Files/Pods-GiphSearcher/Pods-GiphSearcher.release.xcconfig"; sourceTree = "<group>"; };
+		9DCCEDE221B7908DA47B4FB7 /* Pods-GiphSearcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphSearcherTests.debug.xcconfig"; path = "Target Support Files/Pods-GiphSearcherTests/Pods-GiphSearcherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1B649112274927200D55C9A /* GiphSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B649142274927200D55C9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1B649162274927200D55C9A /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		C1B649192274927200D55C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1B6491B2274927400D55C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1B6491E2274927400D55C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1B649202274927400D55C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1B649252274927400D55C9A /* GiphSearcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiphSearcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B6492B2274927400D55C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1B649302274927400D55C9A /* GiphSearcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiphSearcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B649342274927400D55C9A /* GiphSearcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphSearcherUITests.swift; sourceTree = "<group>"; };
+		C1B649362274927400D55C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1B649422274946600D55C9A /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		C1B64946227495F300D55C9A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C1B649492274962300D55C9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C1B6494B2274986D00D55C9A /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C1B6494D227498C600D55C9A /* GiphyApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyApi.swift; sourceTree = "<group>"; };
+		C1B649512276015800D55C9A /* GifCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1B6495622761D7600D55C9A /* GiphyApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyApiTests.swift; sourceTree = "<group>"; };
+		C1B6495D2276289600D55C9A /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		C1B6495F227629B400D55C9A /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		C1B6496122762A6800D55C9A /* WebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceTests.swift; sourceTree = "<group>"; };
+		C1B64964227699A600D55C9A /* MosaicLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicLayout.swift; sourceTree = "<group>"; };
+		C1B649662276B25900D55C9A /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		C1B649682276BE6B00D55C9A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C1B6496A2276BE9A00D55C9A /* WebProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebProtocol.swift; sourceTree = "<group>"; };
+		C1B6496C2276C68400D55C9A /* StickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerViewController.swift; sourceTree = "<group>"; };
+		C1B649702276C9F600D55C9A /* GifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
+		C1B649752276CC6400D55C9A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C1B649782276CCBE00D55C9A /* GifCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCoordinator.swift; sourceTree = "<group>"; };
+		C1B6497A2276CD4200D55C9A /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		C1B6497C2276CE2500D55C9A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C1B6497E2276D06300D55C9A /* StickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCoordinator.swift; sourceTree = "<group>"; };
+		C1B649812276D9FA00D55C9A /* GifDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifDetailViewController.swift; sourceTree = "<group>"; };
+		C1FFF97D227BE3F8009C0D1E /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+		C1FFF97F227BE4B0009C0D1E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		C1FFF982227BE91B009C0D1E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		C1FFF988227BFFFF009C0D1E /* ThrottlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottlerTests.swift; sourceTree = "<group>"; };
+		CEE93AED9ED28D49176BF5EF /* Pods_GiphSearcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiphSearcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D7F87800BCD2BC518CEE0A /* Pods_GiphSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiphSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E105D5DBE5329B122729E3B3 /* Pods_GiphSearcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiphSearcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59A115AD7924E6A0ABB4A36 /* Pods-GiphSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphSearcher.debug.xcconfig"; path = "Target Support Files/Pods-GiphSearcher/Pods-GiphSearcher.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1B6490E2274927200D55C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2222D476674E937C9CD78128 /* Pods_GiphSearcher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B649222274927400D55C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554649239B4BBA7A09CF4FFB /* Pods_GiphSearcherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B6492D2274927400D55C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B42DECF62F4A36796ACDE74 /* Pods_GiphSearcherUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77B79B298EBDEF230C206378 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E59A115AD7924E6A0ABB4A36 /* Pods-GiphSearcher.debug.xcconfig */,
+				8FCD997CB8E50522E114937B /* Pods-GiphSearcher.release.xcconfig */,
+				9DCCEDE221B7908DA47B4FB7 /* Pods-GiphSearcherTests.debug.xcconfig */,
+				8C466E052157FA5799ECC082 /* Pods-GiphSearcherTests.release.xcconfig */,
+				86D14E26E2C80AF9D0BDC036 /* Pods-GiphSearcherUITests.debug.xcconfig */,
+				53064D6FC12E9489AA914952 /* Pods-GiphSearcherUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1B649082274927100D55C9A = {
+			isa = PBXGroup;
+			children = (
+				C1B649132274927200D55C9A /* GiphSearcher */,
+				C1B649282274927400D55C9A /* GiphSearcherTests */,
+				C1B649332274927400D55C9A /* GiphSearcherUITests */,
+				C1B649122274927200D55C9A /* Products */,
+				77B79B298EBDEF230C206378 /* Pods */,
+				C792E52E555210FB218FA81F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1B649122274927200D55C9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1B649112274927200D55C9A /* GiphSearcher.app */,
+				C1B649252274927400D55C9A /* GiphSearcherTests.xctest */,
+				C1B649302274927400D55C9A /* GiphSearcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1B649132274927200D55C9A /* GiphSearcher */ = {
+			isa = PBXGroup;
+			children = (
+				C1FFF981227BE910009C0D1E /* Extensions */,
+				C1B649772276CC8100D55C9A /* Activities */,
+				C1B649742276CC5800D55C9A /* Protocols */,
+				C1B64950227600EA00D55C9A /* Views */,
+				C1B6494F22749E7E00D55C9A /* Models */,
+				C1B649482274961600D55C9A /* Utilities */,
+				C1B64945227495E800D55C9A /* Adapters */,
+				C1B649142274927200D55C9A /* AppDelegate.swift */,
+				C1B649182274927200D55C9A /* Main.storyboard */,
+				C1B6491B2274927400D55C9A /* Assets.xcassets */,
+				C1B6491D2274927400D55C9A /* LaunchScreen.storyboard */,
+				C1B649202274927400D55C9A /* Info.plist */,
+			);
+			path = GiphSearcher;
+			sourceTree = "<group>";
+		};
+		C1B649282274927400D55C9A /* GiphSearcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1B6492B2274927400D55C9A /* Info.plist */,
+				C1B6495622761D7600D55C9A /* GiphyApiTests.swift */,
+				C1B6495D2276289600D55C9A /* TestData.swift */,
+				C1B6495F227629B400D55C9A /* URLProtocolMock.swift */,
+				C1B649662276B25900D55C9A /* loader.gif */,
+				C1B6496122762A6800D55C9A /* WebServiceTests.swift */,
+				C1B649702276C9F600D55C9A /* GifTests.swift */,
+				C1FFF988227BFFFF009C0D1E /* ThrottlerTests.swift */,
+			);
+			path = GiphSearcherTests;
+			sourceTree = "<group>";
+		};
+		C1B649332274927400D55C9A /* GiphSearcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1B649342274927400D55C9A /* GiphSearcherUITests.swift */,
+				C1B649362274927400D55C9A /* Info.plist */,
+			);
+			path = GiphSearcherUITests;
+			sourceTree = "<group>";
+		};
+		C1B64945227495E800D55C9A /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				C1B64946227495F300D55C9A /* Endpoint.swift */,
+				C1B6494D227498C600D55C9A /* GiphyApi.swift */,
+				C1B649682276BE6B00D55C9A /* NetworkError.swift */,
+				C1B6494B2274986D00D55C9A /* WebService.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		C1B649482274961600D55C9A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C1B649492274962300D55C9A /* Constants.swift */,
+				C1FFF97D227BE3F8009C0D1E /* Throttler.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C1B6494F22749E7E00D55C9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1B649422274946600D55C9A /* Gif.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1B64950227600EA00D55C9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1B6497C2276CE2500D55C9A /* MainTabBarController.swift */,
+				C1B649512276015800D55C9A /* GifCollectionViewCell.swift */,
+				C1B64964227699A600D55C9A /* MosaicLayout.swift */,
+				C1FFF97F227BE4B0009C0D1E /* SearchBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C1B649742276CC5800D55C9A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C1B6496A2276BE9A00D55C9A /* WebProtocol.swift */,
+				C1B649752276CC6400D55C9A /* Coordinator.swift */,
+				C1B6497A2276CD4200D55C9A /* Storyboardable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C1B649772276CC8100D55C9A /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				C1FFF987227BF3D4009C0D1E /* Stickers */,
+				C1FFF986227BF3CF009C0D1E /* Gifs */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		C1FFF981227BE910009C0D1E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1FFF982227BE91B009C0D1E /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1FFF986227BF3CF009C0D1E /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				C1B649162274927200D55C9A /* GifViewController.swift */,
+				C1B649812276D9FA00D55C9A /* GifDetailViewController.swift */,
+				C1B649782276CCBE00D55C9A /* GifCoordinator.swift */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
+		C1FFF987227BF3D4009C0D1E /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				C1B6496C2276C68400D55C9A /* StickerViewController.swift */,
+				C1B6497E2276D06300D55C9A /* StickerCoordinator.swift */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
+		C792E52E555210FB218FA81F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2D7F87800BCD2BC518CEE0A /* Pods_GiphSearcher.framework */,
+				CEE93AED9ED28D49176BF5EF /* Pods_GiphSearcherTests.framework */,
+				E105D5DBE5329B122729E3B3 /* Pods_GiphSearcherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1B649102274927200D55C9A /* GiphSearcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B649392274927400D55C9A /* Build configuration list for PBXNativeTarget "GiphSearcher" */;
+			buildPhases = (
+				143DCAA4619D8B7521A25827 /* [CP] Check Pods Manifest.lock */,
+				C1B6490D2274927200D55C9A /* Sources */,
+				C1B6490E2274927200D55C9A /* Frameworks */,
+				C1B6490F2274927200D55C9A /* Resources */,
+				0BD86CA345C722E4C9FE7171 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiphSearcher;
+			productName = GiphSearcher;
+			productReference = C1B649112274927200D55C9A /* GiphSearcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1B649242274927400D55C9A /* GiphSearcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B6493C2274927400D55C9A /* Build configuration list for PBXNativeTarget "GiphSearcherTests" */;
+			buildPhases = (
+				A00BAC20F68571425414046B /* [CP] Check Pods Manifest.lock */,
+				C1B649212274927400D55C9A /* Sources */,
+				C1B649222274927400D55C9A /* Frameworks */,
+				C1B649232274927400D55C9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1B649272274927400D55C9A /* PBXTargetDependency */,
+			);
+			name = GiphSearcherTests;
+			productName = GiphSearcherTests;
+			productReference = C1B649252274927400D55C9A /* GiphSearcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1B6492F2274927400D55C9A /* GiphSearcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B6493F2274927400D55C9A /* Build configuration list for PBXNativeTarget "GiphSearcherUITests" */;
+			buildPhases = (
+				A0E964E8E52E9AE447C2A252 /* [CP] Check Pods Manifest.lock */,
+				C1B6492C2274927400D55C9A /* Sources */,
+				C1B6492D2274927400D55C9A /* Frameworks */,
+				C1B6492E2274927400D55C9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1B649322274927400D55C9A /* PBXTargetDependency */,
+			);
+			name = GiphSearcherUITests;
+			productName = GiphSearcherUITests;
+			productReference = C1B649302274927400D55C9A /* GiphSearcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1B649092274927200D55C9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Johann Kerr";
+				TargetAttributes = {
+					C1B649102274927200D55C9A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C1B649242274927400D55C9A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C1B649102274927200D55C9A;
+					};
+					C1B6492F2274927400D55C9A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C1B649102274927200D55C9A;
+					};
+				};
+			};
+			buildConfigurationList = C1B6490C2274927200D55C9A /* Build configuration list for PBXProject "GiphSearcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1B649082274927100D55C9A;
+			productRefGroup = C1B649122274927200D55C9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1B649102274927200D55C9A /* GiphSearcher */,
+				C1B649242274927400D55C9A /* GiphSearcherTests */,
+				C1B6492F2274927400D55C9A /* GiphSearcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1B6490F2274927200D55C9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B6491F2274927400D55C9A /* LaunchScreen.storyboard in Resources */,
+				C1B649672276B25A00D55C9A /* loader.gif in Resources */,
+				C1B6491C2274927400D55C9A /* Assets.xcassets in Resources */,
+				C1B6491A2274927200D55C9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B649232274927400D55C9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B6492E2274927400D55C9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BD86CA345C722E4C9FE7171 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GiphSearcher/Pods-GiphSearcher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GiphSearcher/Pods-GiphSearcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		143DCAA4619D8B7521A25827 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GiphSearcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00BAC20F68571425414046B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GiphSearcherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0E964E8E52E9AE447C2A252 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GiphSearcherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1B6490D2274927200D55C9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B6494C2274986D00D55C9A /* WebService.swift in Sources */,
+				C1B649792276CCBE00D55C9A /* GifCoordinator.swift in Sources */,
+				C1B6494A2274962300D55C9A /* Constants.swift in Sources */,
+				C1B649762276CC6400D55C9A /* Coordinator.swift in Sources */,
+				C1FFF97E227BE3F8009C0D1E /* Throttler.swift in Sources */,
+				C1B649172274927200D55C9A /* GifViewController.swift in Sources */,
+				C1B64965227699A600D55C9A /* MosaicLayout.swift in Sources */,
+				C1B649522276015800D55C9A /* GifCollectionViewCell.swift in Sources */,
+				C1B6496D2276C68400D55C9A /* StickerViewController.swift in Sources */,
+				C1B649152274927200D55C9A /* AppDelegate.swift in Sources */,
+				C1B64947227495F300D55C9A /* Endpoint.swift in Sources */,
+				C1B649822276D9FA00D55C9A /* GifDetailViewController.swift in Sources */,
+				C1B6497D2276CE2500D55C9A /* MainTabBarController.swift in Sources */,
+				C1B649432274946600D55C9A /* Gif.swift in Sources */,
+				C1B6494E227498C600D55C9A /* GiphyApi.swift in Sources */,
+				C1B6497F2276D06300D55C9A /* StickerCoordinator.swift in Sources */,
+				C1FFF983227BE91B009C0D1E /* Date.swift in Sources */,
+				C1B649692276BE6B00D55C9A /* NetworkError.swift in Sources */,
+				C1FFF980227BE4B0009C0D1E /* SearchBar.swift in Sources */,
+				C1B6497B2276CD4200D55C9A /* Storyboardable.swift in Sources */,
+				C1B6496B2276BE9A00D55C9A /* WebProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B649212274927400D55C9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B6495E2276289600D55C9A /* TestData.swift in Sources */,
+				C1B6495722761D7600D55C9A /* GiphyApiTests.swift in Sources */,
+				C1FFF989227BFFFF009C0D1E /* ThrottlerTests.swift in Sources */,
+				C1B64960227629B400D55C9A /* URLProtocolMock.swift in Sources */,
+				C1B6496222762A6800D55C9A /* WebServiceTests.swift in Sources */,
+				C1B649712276C9F600D55C9A /* GifTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B6492C2274927400D55C9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B649352274927400D55C9A /* GiphSearcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1B649272274927400D55C9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1B649102274927200D55C9A /* GiphSearcher */;
+			targetProxy = C1B649262274927400D55C9A /* PBXContainerItemProxy */;
+		};
+		C1B649322274927400D55C9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1B649102274927200D55C9A /* GiphSearcher */;
+			targetProxy = C1B649312274927400D55C9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1B649182274927200D55C9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1B649192274927200D55C9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1B6491D2274927400D55C9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1B6491E2274927400D55C9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1B649372274927400D55C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1B649382274927400D55C9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1B6493A2274927400D55C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59A115AD7924E6A0ABB4A36 /* Pods-GiphSearcher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
+				INFOPLIST_FILE = GiphSearcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.GiphSearcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1B6493B2274927400D55C9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCD997CB8E50522E114937B /* Pods-GiphSearcher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
+				INFOPLIST_FILE = GiphSearcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.GiphSearcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1B6493D2274927400D55C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCCEDE221B7908DA47B4FB7 /* Pods-GiphSearcherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
+				INFOPLIST_FILE = GiphSearcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.GiphSearcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiphSearcher.app/GiphSearcher";
+			};
+			name = Debug;
+		};
+		C1B6493E2274927400D55C9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C466E052157FA5799ECC082 /* Pods-GiphSearcherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
+				INFOPLIST_FILE = GiphSearcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.GiphSearcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiphSearcher.app/GiphSearcher";
+			};
+			name = Release;
+		};
+		C1B649402274927400D55C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86D14E26E2C80AF9D0BDC036 /* Pods-GiphSearcherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
+				INFOPLIST_FILE = GiphSearcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.GiphSearcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GiphSearcher;
+			};
+			name = Debug;
+		};
+		C1B649412274927400D55C9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53064D6FC12E9489AA914952 /* Pods-GiphSearcherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
+				INFOPLIST_FILE = GiphSearcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.GiphSearcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GiphSearcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1B6490C2274927200D55C9A /* Build configuration list for PBXProject "GiphSearcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B649372274927400D55C9A /* Debug */,
+				C1B649382274927400D55C9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1B649392274927400D55C9A /* Build configuration list for PBXNativeTarget "GiphSearcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B6493A2274927400D55C9A /* Debug */,
+				C1B6493B2274927400D55C9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1B6493C2274927400D55C9A /* Build configuration list for PBXNativeTarget "GiphSearcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B6493D2274927400D55C9A /* Debug */,
+				C1B6493E2274927400D55C9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1B6493F2274927400D55C9A /* Build configuration list for PBXNativeTarget "GiphSearcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B649402274927400D55C9A /* Debug */,
+				C1B649412274927400D55C9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1B649092274927200D55C9A /* Project object */;
+}
